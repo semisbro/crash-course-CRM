@@ -4,6 +4,27 @@ from .models import *
 from . forms import OrderForm
 from .filters import OrderFilter
 
+def View(request):
+	context = {}
+	context["name"] = "David"
+	return render(request,"accounts/default.html", context)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #-------------------(DETAIL/LIST VIEWS) -------------------
 
 def dashBoard(request):
